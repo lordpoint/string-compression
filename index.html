@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Template</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet">
+</head>
+  <body>
+
+  <header>
+    <h3>Unique Character Compression</h3>
+  </header>
+
+  <section id="main">
+
+    <div class="row inputs">
+      <div class="input-area col-xs-12">
+        <textarea rows="10" id="input" type="text" placeholder="Type / paste text to be compressed..."></textarea>
+      </div>
+      <div class="output-area">
+        <textarea rows="10" id="output" type="text" placeholder="output"></textarea>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <div id="results" class="stats-area">
+
+      </div>
+    </div>
+
+    <div class="button-area col-xs-12">
+      <button id="compressBtn" class="comp-btn" onclick="getRepeats()">Compress</button>
+      <button id="resetBtn" class="reset-btn" onclick="reset()">Reset</button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+<!--
+  <div class="grid">
+    <div class="box"></div>
+    <div class="box">
+      <textarea rows="5" id="input" type="text" class="form-control" placeholder="input"></textarea>
+      <button id="compressBtn" class="btn btn-primary" onclick="getRepeats()">Compress</button>
+
+      <div id="results">
+      </div>
+
+      <textarea rows="5" id="output" type="text" class="form-control" placeholder="output"></textarea>
+
+      <button id="deCompressBtn" class="btn btn-success" onclick="decompress()">Decompress</button>
+
+      <textarea rows="5" id="decompressedText" type="text" class="form-control" placeholder="decompressed"></textarea>
+
+    </div>
+    <div class="box"></div>
+  </div>
+-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/compress.js"></script>
+  <script src="js/ui.js"></script>
+  </body>
+</html>
